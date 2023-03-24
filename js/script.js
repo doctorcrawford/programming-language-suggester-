@@ -1,3 +1,5 @@
+// UI Logic
+
 function hideResults() {
   document.getElementById('csharp').setAttribute('class', 'hidden');
   document.getElementById('js').setAttribute('class', 'hidden');
@@ -34,6 +36,8 @@ function runQuiz(event) {
     showResult('js');
   } else if (purpose === 'new') {
     showResult('csharp');
+  } else {
+    showResult('python')
   }
 
   theirName(userName);
