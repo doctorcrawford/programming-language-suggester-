@@ -9,7 +9,7 @@ function showResult(language) {
   document.getElementById(language).removeAttribute('class', 'hidden');
 }
 
-function name(enter) {
+function theirName(enter) {
   document.getElementById('name').innerHTML = enter;
 }
 
@@ -35,7 +35,7 @@ function doTheThing(event) {
     showResult('csharp');
   }
 
-  
+  theirName(userName);
 }
 
 window.addEventListener('load', function() {
