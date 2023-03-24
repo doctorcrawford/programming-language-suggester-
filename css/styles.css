@@ -2,18 +2,43 @@ body {
   background-color: rgb(148, 205, 255);
 }
 
+#answers {
+  margin-top: 25px;
+}
+
 img {
   width: 300px;
   height: auto;
   float: left;
   border: 1px black solid;
+  border-radius: 50px;
+  padding: 15px;
+  margin-right: 20px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+h4 {
+  margin-top: 5px;
 }
 
 .hidden {
   display: none;
 }
+form {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: ;
+  border: 1px gray solid;
+}
 
-#error-message {
-  color: red;
-  font-weight: 600;
+form input {
+  opacity: 0.7;
+  filter: alpha(opacity=90);
+}
+
+select {
+  opacity: 0.7;
+  filter: alpha(opacity=90);
 }

@@ -18,39 +18,47 @@
     <h1>Programming Language Suggester</h1>
     <p>Have you wanted to learn a new programming language but aren't sure which one to choose? If yes, you've come to the right place. Take this short quiz to match you with the language you align with the most.</p>
     <form id="quiz">
-      <label for="userName">Your name:</label>
-      <input id="userName" type="text" name="userName" required>
-      <br>
-      <p>Please select why you are choosing to learn a new programming language:</p>
-      <select id="purpose" required>
-        <option value="">-Select an option below-</option>
-        <option value="work">Work</option>
-        <option value="personal">Personal Project</option>
-        <option value="new">I just want to learn something new</option>
-        <option value="ai">I want to learn how computers work before AI takes over the world</option>
-      </select>
-      <br>
-      <p>Please choose the person/character you most identify with:</p>
-      <select id="identify" required>
-        <option value="">-Select an option below-</option>
-        <option value="rob schneider">Rob Schneider</option>
-        <option value="beyonce">Beyonce</option>
-        <option value="steve">Steve Jobs</option>
-        <option value="angelica">Angelica Pickles</option>
-      </select>
-      <br>
-      <label for="date">Your favorite date in history:</label>
-      <input for="date" type="date" id="date" required>
-      <br>
-      <label for="color">What is your <em>least</em> favorite color:</label>
-      <input for="color" type="color" id="color">
-      <button type="submit">What's my language?</button>
+      <div>
+        <label for="userName">Your name:</label>
+        <input id="userName" type="text" name="userName" required>
+      </div>
+      <div>
+        <p>Please select why you are choosing to learn a new programming language:</p>
+        <select id="purpose" required>
+          <option value="">-Select an option below-</option>
+          <option value="work">Work</option>
+          <option value="personal">Personal Project</option>
+          <option value="new">I just want to learn something new</option>
+          <option value="ai">I want to learn how computers work before AI takes over the world</option>
+        </select>
+      </div>
+      <div>
+        <p>Please choose the person/character you most identify with:</p>
+        <select id="identify" required>
+          <option value="">-Select an option below-</option>
+          <option value="rob schneider">Rob Schneider</option>
+          <option value="beyonce">Beyonce</option>
+          <option value="steve">Steve Jobs</option>
+          <option value="angelica">Angelica Pickles</option>
+        </select>
+      </div>
+      <div>
+        <label for="date">Your favorite date in history:</label>
+        <input for="date" type="date" id="date" required>
+      </div>
+      <div>
+        <label for="color">What is your <em>least</em> favorite color:</label>
+        <input for="color" type="color" id="color">
+      </div>
+      <div>
+        <button type="submit" class="btn btn-success">What's my language?</button>
+      </div>
     </form>
 
     <div id="answers">
-      <h5>Hey there <span id="name"></span></h5>
-      <h6>Your Next Language:</h6>
-      <div class="hidden" id="csharp">
+      <h5>Hey there <span id="name"></span>!</h5>
+      <h5>Your Next Language:</h5>
+      <div class="hidden" id="csharp" class="answer">
         <img src="img/c-sharp.jpeg" alt="c-sharp">
         <h4>C# !!</h4>
         <p>C# is a general-purpose high-level programming language supporting multiple paradigms. C# encompasses static typing, strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented, and component-oriented programming disciplines.</p>
