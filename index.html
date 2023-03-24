@@ -15,17 +15,36 @@
     <label for="userName">Your name:</label>
     <input for="userName" type="text" name="userName">
     <br>
-    <p>Please select</p>
+    <p>Please select why you are choosing to learn a new programming language:</p>
     <select id="purpose">
-      <option value="0"></option>
+      <option value="0">-Select an option below-</option>
+      <option value="1">Work</option>
+      <option value="2">Personal Project</option>
+      <option value="3">I just want to learn something new</option>
+      <option value="4">I want to learn how computers work before AI takes over the world</option>
     </select>
+    <br>
+    <p>Please choose the person/character you most identify with:</p>
+    <input type="radio" name="identify" value="rob clooney" id="rob" checked>
+    <label for="rob">Rob Schneider</label><br>
+    <input type="radio" name="identify" value="" id="beyonce">
+    <label for="beyonce">Beyonce</label><br>
+    <input type="radio" name="identify" value="homer" id="homer">
+    <label for="homer">Homer Simpson</label><br>
+    <input type="radio" name="identify" value="angelica pickles" id="george">
+    <label for="angelica">Angelica Pickles</label><br>
     <br>
     <label for="date">Your favorite date in history:</label>
     <input for="date" type="date" id="date">
     <br>
-    <label for="color">What is your least favorite color:</label>
+    <label for="color">What is your <em>least</em> favorite color:</label>
     <input for="color" type="color" id="color">
     <select name="" id=""></select>
+    <button type="submit">What's my language?</button>
   </form>
+  <div id="answers">
+    <h2>Your Next Language:</h2>
+    
+  </div>
 </body>
 </html>
