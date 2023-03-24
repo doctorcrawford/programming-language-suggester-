@@ -13,26 +13,25 @@
   <p>Have you wanted to learn a new programming language but aren't sure which one to choose? If yes, you've come to the right place. Take this short quiz to match you with the language you align with the most.</p>
   <form>
     <label for="userName">Your name:</label>
-    <input for="userName" type="text" name="userName">
+    <input id="userName" type="text" name="userName">
     <br>
     <p>Please select why you are choosing to learn a new programming language:</p>
     <select id="purpose">
       <option value="0">-Select an option below-</option>
-      <option value="1">Work</option>
-      <option value="2">Personal Project</option>
-      <option value="3">I just want to learn something new</option>
-      <option value="4">I want to learn how computers work before AI takes over the world</option>
+      <option value="work">Work</option>
+      <option value="personal">Personal Project</option>
+      <option value="new">I just want to learn something new</option>
+      <option value="ai">I want to learn how computers work before AI takes over the world</option>
     </select>
     <br>
     <p>Please choose the person/character you most identify with:</p>
-    <input type="radio" name="identify" value="rob clooney" id="rob" checked>
-    <label for="rob">Rob Schneider</label><br>
-    <input type="radio" name="identify" value="" id="beyonce">
-    <label for="beyonce">Beyonce</label><br>
-    <input type="radio" name="identify" value="homer" id="homer">
-    <label for="homer">Homer Simpson</label><br>
-    <input type="radio" name="identify" value="angelica pickles" id="george">
-    <label for="angelica">Angelica Pickles</label><br>
+    <select id="identify">
+      <option value="select">-Select an option below-</option>
+      <option value="rob schneider">Rob Schneider</option>
+      <option value="beyonce">Beyonce</option>
+      <option value="homer">Homer Simpson</option>
+      <option value="angelica">Angelica Pickles</option>
+    </select>
     <br>
     <label for="date">Your favorite date in history:</label>
     <input for="date" type="date" id="date">
