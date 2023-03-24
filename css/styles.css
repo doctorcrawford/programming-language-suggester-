@@ -5,3 +5,8 @@ img {
 .hidden {
   display: none;
 }
+
+#error-message {
+  color: red;
+  font-weight: 600;
+}

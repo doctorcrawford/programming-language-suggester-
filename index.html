@@ -13,11 +13,11 @@
   <p>Have you wanted to learn a new programming language but aren't sure which one to choose? If yes, you've come to the right place. Take this short quiz to match you with the language you align with the most.</p>
   <form>
     <label for="userName">Your name:</label>
-    <input id="userName" type="text" name="userName">
+    <input id="userName" type="text" name="userName" required>
     <br>
     <p>Please select why you are choosing to learn a new programming language:</p>
-    <select id="purpose">
-      <option value="0">-Select an option below-</option>
+    <select id="purpose" required>
+      <option value="">-Select an option below-</option>
       <option value="work">Work</option>
       <option value="personal">Personal Project</option>
       <option value="new">I just want to learn something new</option>
@@ -25,16 +25,16 @@
     </select>
     <br>
     <p>Please choose the person/character you most identify with:</p>
-    <select id="identify">
-      <option value="select">-Select an option below-</option>
+    <select id="identify" required>
+      <option value="">-Select an option below-</option>
       <option value="rob schneider">Rob Schneider</option>
       <option value="beyonce">Beyonce</option>
-      <option value="homer">Homer Simpson</option>
+      <option value="steve">Steve Jobs</option>
       <option value="angelica">Angelica Pickles</option>
     </select>
     <br>
     <label for="date">Your favorite date in history:</label>
-    <input for="date" type="date" id="date">
+    <input for="date" type="date" id="date" required>
     <br>
     <label for="color">What is your <em>least</em> favorite color:</label>
     <input for="color" type="color" id="color">
@@ -42,7 +42,8 @@
     <button type="submit">What's my language?</button>
   </form>
   <div id="answers">
-    <h2>Your Next Language:</h2>
+    <h3>Hey there <span id="name"></span></h3>
+    <h4>Your Next Language:</h2>
     <div class="hidden" id="csharp">
       <img src="img/c-sharp.jpeg" alt="c-sharp">
       <p>C# !!</p>
