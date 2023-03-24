@@ -1,5 +1,12 @@
+body {
+  background-color: rgb(148, 205, 255);
+}
+
 img {
   width: 300px;
+  height: auto;
+  float: left;
+  border: 1px black solid;
 }
 
 .hidden {

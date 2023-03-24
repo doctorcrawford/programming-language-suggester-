@@ -7,13 +7,14 @@ function hideResults() {
 
 function showResult(language) {
   document.getElementById(language).removeAttribute('class', 'hidden');
+  document.getElementById('answers').removeAttribute('class', 'hidden');
 }
 
 function theirName(enter) {
   document.getElementById('name').innerHTML = enter;
 }
 
-function doTheThing(event) {
+function runQuiz(event) {
   event.preventDefault();
   console.log(event);
   hideResults();
@@ -40,5 +41,5 @@ function doTheThing(event) {
 
 window.addEventListener('load', function() {
   const form = document.getElementById('quiz');
-  form.addEventListener('submit', doTheThing);
+  form.addEventListener('submit', runQuiz);
 });
